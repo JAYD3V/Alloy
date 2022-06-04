@@ -1,2 +1,3 @@
-# Eunoia
-A theme for VS Code
+# ALLOY
+
+##### A collection of different theme types for VS Code.
