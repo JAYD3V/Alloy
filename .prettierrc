@@ -1,0 +1,45 @@
+{
+     "printWidth": 90,
+     "tabWidth": 4,
+     "singleQuote": true,
+     "semi": true,
+     "useTabs": false,
+     "arrowParens": "always",
+     "proseWrap": "always",
+     "quoteProps": "as-needed",
+     "embeddedLanguageFormatting": "off",
+     "endOfLine": "lf",
+     "trailingComma": "none",
+     "overrides": [
+          {
+               "files": ["*.ts", "*.mts", "*.cts"],
+               "options": {
+                    "parser": "babel-ts"
+               }
+          },
+
+          {
+               "files": ["*.json", "*.jsonc", ".prettierrc", "tsconfig.*"],
+               "options": {
+                    "printWidth": 100,
+                    "tabWidth": 5,
+                    "parser": "json"
+               }
+          },
+
+          {
+               "files": ["*.html", "*.xml"],
+               "options": {
+                    "printWidth": 120,
+                    "tabWidth": 3,
+                    "embeddedLanguageFormatting": "auto",
+                    "singleAttributePerLine": true,
+                    "bracketSameLine": true,
+                    "bracketSpacing": true,
+                    "htmlWhitespaceSensitivity": "strict",
+                    "useTabs": true,
+                    "parser": "html"
+               }
+          }
+     ]
+}

@@ -1,0 +1,28 @@
+{
+     // VS CODE SETTINGS
+     "workbench.colorCustomizations": {
+          "editorUnnecessaryCode.opacity": "#00000080"
+     },
+     "editor.tokenColorCustomizations": {
+          "comments": "#CC285888" // Hello World, Foo-bar foo
+     },
+
+     // DEVELOPMENT-ENVIORNMENT (ensure these rules adhere to .editorconfig)
+     "files.eol": "\n",
+     "files.encoding": "utf8",
+     "files.trimFinalNewlines": true,
+     "files.trimTrailingWhitespace": true,
+     "files.insertFinalNewline": true,
+
+     // EDITOR
+     "editor.wordWrap": "off",
+     "editor.tabSize": 4,
+
+     // LANGUAGE SPECIFIC
+     "[typescript]": { "editor.wrappingIndent": "deepIndent" },
+     "[javascript]": { "editor.wrappingIndent": "deepIndent" },
+     "[xml]": { "editor.autoClosingBrackets": "never" },
+     "[HTML]": { "editor.autoClosingBrackets": "never" },
+     "[json]": { "editor.tabSize": 5 },
+     "[jsonc]": { "editor.tabSize": 5 }
+}

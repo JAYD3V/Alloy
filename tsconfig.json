@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+
+  // PROJECTS FILE STRUCTURE
+  "include": ["src/*.ts"],
+  "exclude": ["node_modules/**/*", "out/**/*", "*.js", "*.cjs", "*.mjs"],
+  "compilerOptions": {
+    "outDir": "build",
+    "sourceRoot": "source",
+    "declarationDir": "types",
+
+    // ECMAScript Support
+    "lib": ["ES2022"],
+    "target": "ES2022",
+    "allowJs": false,
+
+    // MODULAR CONFIGURATION
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+
+    // TRANSPILER CONFIGURATION
+    "declaration": true,
+    "inlineSourceMap": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "allowUnreachableCode": false,
+    "listEmittedFiles": true,
+    "watch": false
+  }
+}
