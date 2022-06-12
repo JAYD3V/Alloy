@@ -1,10 +1,10 @@
 {
   // PROJECTS FILE STRUCTURE
-  "include": ["src/**/*.ts", "src/**/*.mts"],
-  "exclude": ["node_modules/**/*", "extension/build/**/*", "*.js", "*.cjs", "*.mjs"],
+  "include": ["src/*.ts", "src/*.mts"],
+  "exclude": ["node_modules/**/*", "build/**/*", "*.js", "*.cjs", "*.mjs"],
 
   "compilerOptions": {
-    "outDir": "extension/build",
+    "outDir": "build",
     "sourceRoot": "source",
     "declarationDir": "types",
     "declaration": true,
