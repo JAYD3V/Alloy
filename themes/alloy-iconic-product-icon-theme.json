@@ -1,0 +1,22 @@
+{
+  "fonts": [
+    {
+      "id": "alloy-iconic-icon-font",
+      "src": [{ "path": "./alloy-iconic-icon-font.woff", "format": "woff" }],
+      "weight": "normal",
+      "style": "normal"
+    }
+  ],
+
+  "iconDefinitions": {
+    /* 00 | 'explorer-view-icon' */ "explorer-view-icon": { "fontCharacter": "\\e000" },
+    /* 01 | 'search-view-icon' */ "search-view-icon": { "fontCharacter": "\\e001" },
+    /* 02 | 'run-view-icon' */ "run-view-icon": { "fontCharacter": "\\e002" },
+    /* 03 | 'source-control-view-icon' */ "source-control-view-icon": { "fontCharacter": "\\e003" },
+    /* 04 | 'extensions-view-icon' */ "extensions-view-icon": { "fontCharacter": "\\e004" },
+    /* 05 | 'feedback' */ "feedback": { "fontCharacter": "\\e005" },
+    /* 06 | 'folding-expanded' */ "folding-expanded": { "fontCharacter": "\\e006" },
+    /* 07 | 'folding-collapsed' */ "folding-collapsed": { "fontCharacter": "\\e007" },
+    /* 08 | 'tree-item-expanded' */ "tree-item-expanded": { "fontCharacter": "\\e008" }
+  }
+}

@@ -7,7 +7,7 @@
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "typescript": "^4.8.0-dev.20220610",
+    "typescript": "^4.8.0-dev.20220611",
     "vsce": "^2.9.1",
     "vscode": "^0.9.9"
   },
@@ -15,46 +15,16 @@
     "webfont": "^11.2.26"
   },
   "name": "alloy-iconic",
+  "type": "module",
   "description": "A collection of different theme types for VS Code.",
   "version": "0.0.0",
   "main": "./out/extension.js",
+  "repository": "https://github.com/JAYD3V/Alloy.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "entry-point": "node ./build/extension.mjs"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JAYD3V/Alloy.git"
-  },
-  "keywords": [
-    "Alloy",
-    "Iconic",
-    "AlloyIconic",
-    "Product",
-    "Icon",
-    "Theme",
-    "Product-Icon-Theme",
-    "VS",
-    "Code",
-    "Visual",
-    "Studio",
-    "Code",
-    "Extension",
-    "VSCode-Extension",
-    "vsce",
-    "JAYD3V",
-    "jD3V",
-    "icons",
-    "color",
-    "dynamic",
-    "configurable",
-    "custom",
-    "customize",
-    "customizable"
-  ],
   "author": "Andrew Chambers <W3Dojo@Gmail.com>",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/JAYD3V/Alloy/issues"
-  },
   "homepage": "https://github.com/JAYD3V/Alloy#readme"
 }
