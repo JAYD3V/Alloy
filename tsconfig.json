@@ -1,30 +1,64 @@
 {
-  // PROJECTS FILE STRUCTURE
-  "include": ["src/*.ts", "src/*.mts"],
-  "exclude": ["node_modules/**/*", "build/**/*", "*.js", "*.cjs", "*.mjs"],
+     // PROJECTS FILE STRUCTURE
+     "include": [
+          // Only include 'src/*.ts' & 'src/*.mts' as source-code
+          "src/**/*.ts",
+          "src/**/*.mts"
+     ],
 
-  "compilerOptions": {
-    "outDir": "build",
-    "sourceRoot": "source",
-    "declarationDir": "types",
-    "declaration": true,
-    "inlineSourceMap": true,
+     "exclude": [
+          // Don't include pkg or build files in source-code
+          "node_modules/**/*",
+          "extension/**/*",
+          // Don't include JS, Declaration or Map files in source-code
+          "*.js",
+          "*.map.js",
+          "*.d.ts",
+          "*.mjs",
+          "*.map.mjs",
+          "*.d.mts"
+     ],
 
-    // ECMAScript Support
-    "lib": ["ES2022"],
-    "target": "ES2022",
-    "allowJs": false,
+     "compilerOptions": {
+          // * Emissions *
+          "outDir": "extension",
+          "baseUrl": "./src",
+          "declaration": true,
+          "inlineSources": true,
+          "sourceMap": true,
 
-    // MODULAR CONFIGURATION
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": false,
+          // * ECMAScript Configuration *
+          "lib": ["ES2022"],
+          "target": "ES2022",
+          "allowJs": false,
 
-    // TRANSPILER CONFIGURATION
-    "strict": true,
-    "allowUnreachableCode": false,
-    "listEmittedFiles": true,
-    "watch": false
-  }
+          // * Module Configuration *
+          "module": "NodeNext",
+          "moduleResolution": "NodeNext",
+          "resolveJsonModule": true,
+
+          // COMPILER STRICTNESS
+          "strict": false,
+          "alwaysStrict": false,
+          "strictPropertyInitialization": true,
+          "strictNullChecks": true,
+          "strictFunctionTypes": true,
+          "strictBindCallApply": true,
+          "noImplicitAny": true,
+          "noImplicitThis": true,
+          "noImplicitReturns": true,
+          "noImplicitOverride": true,
+          "noUnusedLocals": true,
+          "noUncheckedIndexedAccess": true,
+          "noPropertyAccessFromIndexSignature": true,
+          "allowUnreachableCode": false,
+          "exactOptionalPropertyTypes": true,
+
+          // * Types *
+          "useUnknownInCatchVariables": true,
+
+          // * Transpiler Behavior *
+          "listEmittedFiles": true,
+          "watch": false
+     }
 }
