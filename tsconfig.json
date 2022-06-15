@@ -3,7 +3,7 @@
      "include": [
           // Only include 'src/*.ts' & 'src/*.mts' as source-code
           "src/**/*.ts",
-          "src/**/*.mts"
+          "src/**/*.mts",
      ],
 
      "exclude": [
@@ -12,16 +12,17 @@
           "extension/**/*",
           // Don't include JS, Declaration or Map files in source-code
           "*.js",
-          "*.map.js",
-          "*.d.ts",
           "*.mjs",
-          "*.map.mjs",
-          "*.d.mts"
+          "*.cjs",
+          "*.cts",
+          "*.d.ts",
+          "*.d.mts",
+          "*.*.map",
      ],
 
      "compilerOptions": {
           // * Emissions *
-          "outDir": "extension",
+          "outDir": "extension/build",
           "baseUrl": "./src",
           "declaration": true,
           "inlineSources": true,
@@ -48,7 +49,7 @@
           "noImplicitThis": true,
           "noImplicitReturns": true,
           "noImplicitOverride": true,
-          "noUnusedLocals": true,
+          "noUnusedLocals": false,
           "noUncheckedIndexedAccess": true,
           "noPropertyAccessFromIndexSignature": true,
           "allowUnreachableCode": false,
