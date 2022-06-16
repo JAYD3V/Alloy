@@ -2,9 +2,55 @@
      "version": "2.0.0",
      "tasks": [
           {
+               "label": "BUILD | REPLACE",
+               "detail": "Deletes the old build dir, then runs `tsc` to create a fresh new build.",
+               "type": "shell",
+               "dependsOn":["BUILD | REMOVE", "BUILD | UPDATE"],
+               "dependsOrder": "sequence",
+               "problemMatcher":"$tsc",
+               "presentation": {
+                    "echo": true,
+                    "reveal": "silent",
+                    "focus": false,
+                    "panel": "shared",
+                    "showReuseMessage": false,
+                    "clear": false,
+                    "group": "BUILD"
+               }
+          },
+
+          {
+               "label": "BUILD | UPDATE",
+               "detail": "Run tsc to emit new files for all files that have been modified.",
+               "type": "shell",
+               "command": "tsc",
+               "problemMatcher":"$tsc",
+               "presentation": {
+                    "echo": true,
+                    "reveal": "silent",
+                    "focus": false,
+                    "panel": "shared",
+                    "showReuseMessage": false,
+                    "clear": false,
+                    "group": "BUILD"
+               }
+          },
+
+          {
+               "label": "BUILD | REMOVE",
+               "detail": "Remove the current project-build (deletes build directory)",
                "type": "shell",
                "command": "rm",
-               "args": ["./extension/dist"]
+               "args": ["-rv", "./extension/build"],
+               "presentation": {
+                    "echo": true,
+                    "reveal": "silent",
+                    "focus": false,
+                    "panel": "shared",
+                    "showReuseMessage": false,
+                    "clear": false,
+                    "group": "BUILD"
+               }
           }
      ]
 }
