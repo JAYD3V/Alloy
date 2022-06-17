@@ -10,3 +10,5 @@ const alloyOptions = {
 };
 
 export default alloyOptions;
+
+/* eslint-disable */

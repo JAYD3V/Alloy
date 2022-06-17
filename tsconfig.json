@@ -23,7 +23,8 @@
      "compilerOptions": {
           // * Emissions *
           "outDir": "extension/build",
-          "baseUrl": "./src",
+          "baseUrl": ".",
+          "typeRoots": ["node_modules/@types", "./types"],
           "declaration": true,
           "inlineSources": true,
           "sourceMap": true,
